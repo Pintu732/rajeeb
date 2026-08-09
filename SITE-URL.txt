@@ -1,0 +1,13 @@
+STEP 8 — SET YOUR LIVE SITE URL
+
+After deployment, replace this placeholder everywhere:
+https://YOUR-SITE.pages.dev
+
+Example free Cloudflare Pages URL:
+https://skillvault.pages.dev
+
+Or GitHub Pages:
+https://YOUR-USERNAME.github.io/skillvault/
+
+If you later buy/own a custom domain:
+https://skillvault.example

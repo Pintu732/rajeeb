@@ -1,0 +1,73 @@
+{
+  "missing_required_files": [],
+  "broken_local_references": [],
+  "placeholder_occurrences": [
+    [
+      "FINAL-LAUNCH-CHECKLIST.md",
+      "YOUR_TELEGRAM_USERNAME"
+    ],
+    [
+      "FINAL-LAUNCH-CHECKLIST.md",
+      "YOUR-SITE.pages.dev"
+    ],
+    [
+      "sitemap.xml",
+      "YOUR-SITE.pages.dev"
+    ],
+    [
+      "LAUNCH-CONFIG.json",
+      "YOUR_TELEGRAM_USERNAME"
+    ],
+    [
+      "LAUNCH-CONFIG.json",
+      "YOUR-SITE.pages.dev"
+    ],
+    [
+      "LAUNCH-CONFIG.json",
+      "G-XXXXXXXXXX"
+    ],
+    [
+      "README.md",
+      "YOUR_TELEGRAM_USERNAME"
+    ],
+    [
+      "STEP-2-GUIDE.md",
+      "YOUR_TELEGRAM_USERNAME"
+    ],
+    [
+      "STEP-8-GUIDE.md",
+      "YOUR-SITE.pages.dev"
+    ],
+    [
+      "SITE-URL.txt",
+      "YOUR-SITE.pages.dev"
+    ],
+    [
+      "STEP-3-GUIDE.md",
+      "YOUR-DOMAIN-HERE"
+    ],
+    [
+      "robots.txt",
+      "YOUR-SITE.pages.dev"
+    ],
+    [
+      "data/settings.json",
+      "YOUR_TELEGRAM_USERNAME"
+    ],
+    [
+      "data/settings.json",
+      "YOUR-SITE.pages.dev"
+    ]
+  ],
+  "html_pages_checked": [
+    "course.html",
+    "disclaimer.html",
+    "404.html",
+    "contact.html",
+    "how-it-works.html",
+    "policies.html",
+    "index.html",
+    "about.html"
+  ],
+  "status": "PASS_WITH_EXPECTED_PLACEHOLDERS"
+}

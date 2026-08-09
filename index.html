@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillVault — Learn Skills That Move You Forward</title>
+  <meta name="description" content="Discover curated skill-based courses in AI, video editing, digital marketing, coding, spoken English, freelancing and more." />
+  <meta name="keywords" content="skill courses, AI course, video editing course, digital marketing course, spoken English, freelancing, coding course" />
+  <meta property="og:title" content="SkillVault — Premium Skill Courses" />
+  <meta property="og:description" content="Curated skill learning in one clean, premium destination." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#080a09" />
+  <link rel="icon" href="assets/skillvault-logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/premium.css">
+</head>
+<body>
+  <div class="page-glow glow-a"></div>
+  <div class="page-glow glow-b"></div>
+
+  <div class="announcement">
+    <span>✦</span> New skill courses added regularly
+    <a href="#courses">Explore now →</a>
+  </div>
+
+  <header class="navbar">
+    <a class="brand" href="#" aria-label="SkillVault home">
+      <img src="assets/skillvault-logo.svg" alt="" class="brand-logo">
+      <span>SkillVault</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#courses">Courses</a>
+      <a href="#categories">Skills</a>
+      <a href="#why-us">Why SkillVault</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-cta" id="navTelegram" href="#" target="_blank" rel="noopener">
+      <span>Get Support</span><b>↗</b>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy-wrap">
+        <div class="eyebrow"><i></i> PRACTICAL SKILLS. CURATED LEARNING.</div>
+        <h1>Learn the skills<br>people <span>pay for.</span></h1>
+        <p class="hero-copy">Discover practical courses across AI, video editing, marketing, coding, spoken English, freelancing and other high-value skills—organized so you can find what matters fast.</p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary">Explore Courses <span>→</span></a>
+          <a id="heroTelegram" href="#" class="btn btn-secondary" target="_blank" rel="noopener">Talk to us on Telegram</a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>8+</strong><span>Skill categories</span></div>
+          <div><strong>100%</strong><span>Mobile friendly</span></div>
+          <div><strong>Fast</strong><span>Course discovery</span></div>
+        </div>
+      </div>
+
+      <div class="hero-showcase" aria-label="Featured learning categories">
+        <div class="showcase-top">
+          <div>
+            <span class="mini-label">SKILLVAULT PICKS</span>
+            <h3>Build your next advantage.</h3>
+          </div>
+          <span class="live-dot"><i></i> Updated</span>
+        </div>
+        <div class="showcase-stack">
+          <article class="mini-course mini-course-a">
+            <span class="mini-icon">✦</span>
+            <div><b>AI & Productivity</b><small>Work smarter with modern tools</small></div>
+            <em>01</em>
+          </article>
+          <article class="mini-course mini-course-b">
+            <span class="mini-icon">◈</span>
+            <div><b>Video Editing</b><small>Create content that holds attention</small></div>
+            <em>02</em>
+          </article>
+          <article class="mini-course mini-course-c">
+            <span class="mini-icon">↗</span>
+            <div><b>Freelancing</b><small>Turn useful skills into income</small></div>
+            <em>03</em>
+          </article>
+        </div>
+        <div class="showcase-note">
+          <span>Popular skills</span>
+          <b>AI • Editing • English • Marketing</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Course search">
+      <div class="search-heading">
+        <span>Find your next skill</span>
+        <small>Search by course, creator or topic</small>
+      </div>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search" placeholder="Try “AI”, “Video Editing” or a creator name..." autocomplete="off" />
+        <kbd>⌘ K</kbd>
+      </div>
+      <div id="popularSearches" class="popular-searches"></div>
+    </section>
+
+    <section id="categories" class="section">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">EXPLORE BY SKILL</p>
+          <h2>Choose what you want to master.</h2>
+        </div>
+        <p class="section-intro">No exam clutter. Just practical learning categories built around useful, marketable skills.</p>
+      </div>
+      <div id="categoryGrid" class="category-grid"></div>
+    </section>
+
+    <section class="brand-statement">
+      <div class="statement-mark">SV</div>
+      <p>One place for <strong>practical skill learning.</strong> Clear categories, quick discovery, direct support.</p>
+    </section>
+
+    <section id="courses" class="section">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">POPULAR RIGHT NOW</p>
+          <h2>Courses worth checking out.</h2>
+        </div>
+        <button id="clearFilter" class="text-button hidden">Clear filter ×</button>
+      </div>
+      
+      <div class="discovery-toolbar">
+        <div class="filter-group">
+          <label for="categoryFilter">Category</label>
+          <select id="categoryFilter">
+            <option value="All">All categories</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="creatorFilter">Creator</label>
+          <select id="creatorFilter">
+            <option value="All">All creators</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="levelFilter">Level</label>
+          <select id="levelFilter">
+            <option value="All">All levels</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="All Levels">All Levels</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="priceFilter">Price</label>
+          <select id="priceFilter">
+            <option value="All">Any price</option>
+            <option value="0-499">Under ₹500</option>
+            <option value="500-699">₹500–₹699</option>
+            <option value="700+">₹700+</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="sortFilter">Sort</label>
+          <select id="sortFilter">
+            <option value="recommended">Recommended</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+            <option value="newest">Recently Added</option>
+          </select>
+        </div>
+
+        <button id="resetFilters" class="reset-filter-btn">Reset</button>
+      </div>
+
+      <div class="results-bar">
+        <span id="resultCount">0 courses</span>
+        <div id="activeFilters" class="active-filters"></div>
+      </div>
+
+      <div id="courseGrid" class="course-grid"></div>
+
+      <div id="emptyState" class="empty-state hidden">
+        <div class="empty-icon">⌕</div>
+        <h3>No course found</h3>
+        <p>Try another keyword, creator name or category.</p>
+      </div>
+    </section>
+
+    <section id="why-us" class="section why-section">
+      <div class="why-copy">
+        <p class="section-kicker">WHY SKILLVAULT</p>
+        <h2>Less searching.<br>More learning.</h2>
+        <p>SkillVault is designed to make finding the right skill course feel simple, modern and trustworthy.</p>
+        <a href="#courses" class="inline-link">Browse all courses →</a>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+          <span class="feature-icon">✦</span>
+          <h3>Skill-only focus</h3>
+          <p>AI, editing, marketing, coding, English, freelancing, design and business skills.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">02</span>
+          <span class="feature-icon">⌕</span>
+          <h3>Fast discovery</h3>
+          <p>Find courses by topic, creator or category without digging through clutter.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+          <span class="feature-icon">↗</span>
+          <h3>Direct support</h3>
+          <p>Every course can connect users directly to your Telegram for enquiries.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">04</span>
+          <span class="feature-icon">◇</span>
+          <h3>Built for mobile</h3>
+          <p>A clean experience for the audience most likely to visit from Instagram, Telegram or YouTube.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="cta-copy">
+        <p class="section-kicker">NOT SURE WHERE TO START?</p>
+        <h2>Tell us what you want to learn.</h2>
+        <p>Message us your goal and we’ll help you find the relevant course.</p>
+      </div>
+      <a id="ctaTelegram" href="#" class="btn btn-primary btn-large" target="_blank" rel="noopener">Message on Telegram <span>↗</span></a>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="faq-heading">
+        <p class="section-kicker">FAQ</p>
+        <h2>Before you ask.</h2>
+        <p>Simple answers to the questions visitors usually have.</p>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary><span>What type of courses are available?</span><b>+</b></summary>
+          <p>SkillVault focuses on skill-based learning such as AI, video editing, digital marketing, coding, spoken English, freelancing, graphic design and business skills.</p>
+        </details>
+        <details>
+          <summary><span>How do I enquire about a course?</span><b>+</b></summary>
+          <p>Open a course and use the Telegram enquiry button. The website can automatically include the course name in your message.</p>
+        </details>
+        <details>
+          <summary><span>Can new courses be added later?</span><b>+</b></summary>
+          <p>Yes. The current website is data-driven, so new courses can be added without redesigning the homepage.</p>
+        </details>
+        <details>
+          <summary><span>Does the website work on phones?</span><b>+</b></summary>
+          <p>Yes. The layout is responsive and optimized for phones, tablets and desktop screens.</p>
+        </details>
+      </div>
+    </section>
+  <section class="trust-notice"><div><p class="section-kicker">BUY WITH CLARITY</p><h2>Know what you’re getting before you pay.</h2><p>Check course details, creator attribution, price, access and support terms. If anything is unclear, ask official support before purchase.</p></div><div class="trust-notice-links"><a href="how-it-works.html">How it works →</a><a href="policies.html">Policies →</a><a href="disclaimer.html">Disclaimer →</a></div></section></main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="assets/skillvault-logo.svg" alt="" class="brand-logo">
+          <span>SkillVault</span>
+        </div>
+        <p>Discover practical skills. Learn with direction.</p>
+      </div>
+      <div class="footer-links">
+        <div><span>Explore</span><a href="#courses">Courses</a><a href="#categories">Skills</a></div>
+        <div><span>Help</span><a href="#faq">FAQ</a><a id="footerTelegram" href="#" target="_blank" rel="noopener">Telegram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> SkillVault.</span>
+      <span>Built for skill-based learning.</span>
+    </div>
+  </footer>
+
+  <div id="courseModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
+      <img id="modalImage" src="" alt="" />
+      <div class="modal-body">
+        <div class="course-meta-line">
+          <span id="modalCategory" class="pill"></span>
+          <span id="modalBadge" class="badge"></span>
+        </div>
+        <h2 id="modalTitle"></h2>
+        <p id="modalCreator" class="creator"></p>
+        <p id="modalDescription" class="modal-description"></p>
+        <div class="modal-price-row">
+          <div>
+            <span id="modalOldPrice" class="old-price"></span>
+            <span id="modalPrice" class="price"></span>
+          </div>
+          <a id="modalTelegram" class="btn btn-primary" href="#" target="_blank" rel="noopener">Enquire on Telegram ↗</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

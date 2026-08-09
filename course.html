@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course — SkillVault</title>
+  <meta name="description" content="Explore this skill course on SkillVault.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SkillVault Course">
+  <meta property="og:description" content="Explore this skill course on SkillVault.">
+  <meta property="og:image" content="">
+  <link rel="canonical" href="">
+  <link rel="icon" href="assets/skillvault-logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/course.css">
+  <script type="application/ld+json" id="courseSchema">{}</script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/premium.css">
+</head>
+<body>
+  <div class="page-glow glow-a"></div>
+  <div class="page-glow glow-b"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/skillvault-logo.svg" alt="" class="brand-logo">
+      <span>SkillVault</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#courses">Courses</a>
+      <a href="index.html#categories">Skills</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <a class="nav-cta" id="navTelegram" href="#" target="_blank" rel="noopener"><span>Get Support</span><b>↗</b></a>
+  </header>
+
+  <main class="course-page">
+    <a class="back-link" href="index.html#courses">← Back to courses</a>
+
+    <section class="course-hero">
+      <div class="course-visual">
+        <img id="courseImage" src="" alt="">
+      </div>
+      <div class="course-info">
+        <div class="course-badges">
+          <span id="courseCategory" class="pill"></span>
+          <span id="courseBadge" class="badge"></span>
+        </div>
+        <h1 id="courseTitle">Loading course...</h1>
+        <p id="courseCreator" class="course-creator"></p>
+        <p id="courseDescription" class="course-description"></p>
+
+        <div class="course-price-box">
+          <div>
+            <span id="courseOldPrice" class="old-price"></span>
+            <span id="coursePrice" class="course-price"></span>
+          </div>
+          <span class="access-note">Direct enquiry via Telegram</span>
+        </div>
+
+        <div class="course-actions">
+          <a id="courseTelegram" class="btn btn-primary btn-large" href="#" target="_blank" rel="noopener">Enquire on Telegram ↗</a>
+          <button id="shareCourse" class="btn btn-secondary btn-large">Share course</button>
+        </div>
+
+        <div class="course-trust-row">
+          <span>✓ Mobile friendly</span>
+          <span>✓ Fast support</span>
+          <span>✓ Skill-focused</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-details-grid">
+      <article class="detail-card">
+        <span class="detail-label">COURSE OVERVIEW</span>
+        <h2>What you’ll find here</h2>
+        <p id="overviewText"></p>
+      </article>
+      <article class="detail-card">
+        <span class="detail-label">BEST FOR</span>
+        <h2>Who this course is for</h2>
+        <ul id="bestForList"></ul>
+      </article>
+      <article class="detail-card">
+        <span class="detail-label">TOPICS</span>
+        <h2>Related skills</h2>
+        <div id="tagList" class="tag-list"></div>
+      </article>
+    </section>
+
+    <section class="related-section">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">KEEP EXPLORING</p>
+          <h2>Related courses</h2>
+        </div>
+      </div>
+      <div id="relatedCourses" class="course-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="assets/skillvault-logo.svg" alt="" class="brand-logo">
+          <span>SkillVault</span>
+        </div>
+        <p>Discover practical skills. Learn with direction.</p>
+      </div>
+      <div class="footer-links">
+        <div><span>Explore</span><a href="index.html#courses">Courses</a><a href="index.html#categories">Skills</a></div>
+        <div><span>Help</span><a href="index.html#faq">FAQ</a><a id="footerTelegram" href="#" target="_blank" rel="noopener">Telegram</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> SkillVault.</span>
+      <span>Built for skill-based learning.</span>
+    </div>
+  </footer>
+
+  <script src="js/course.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

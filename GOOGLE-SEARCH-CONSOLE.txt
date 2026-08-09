@@ -1,0 +1,13 @@
+GOOGLE SEARCH CONSOLE — AFTER SITE IS LIVE
+
+1. Open Google Search Console.
+2. Add your live site as a property.
+3. Complete ownership verification using the method Google offers.
+4. Open Sitemaps.
+5. Submit:
+   sitemap.xml
+6. Use URL Inspection for important URLs and request indexing where appropriate.
+
+If Google gives you an HTML meta verification tag, paste it into the <head> of index.html.
+
+Do not invent a verification code. Use only the code Google gives your account.

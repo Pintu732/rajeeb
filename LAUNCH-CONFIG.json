@@ -1,0 +1,8 @@
+{
+  "brandName": "SkillVault",
+  "telegramUsername": "YOUR_TELEGRAM_USERNAME",
+  "siteUrl": "https://YOUR-SITE.pages.dev",
+  "googleSearchConsoleVerification": "PASTE_IF_GOOGLE_PROVIDES_ONE",
+  "googleAnalyticsId": "OPTIONAL_G-XXXXXXXXXX",
+  "clarityProjectId": "OPTIONAL"
+}

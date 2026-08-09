@@ -1,0 +1,16 @@
+{
+  "name": "SkillVault",
+  "short_name": "SkillVault",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080a09",
+  "theme_color": "#080a09",
+  "icons": [
+    {
+      "src": "assets/skillvault-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
