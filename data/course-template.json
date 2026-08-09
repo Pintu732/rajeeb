@@ -1,0 +1,22 @@
+{
+  "id": 999,
+  "slug": "your-course-slug",
+  "title": "Your Course Name",
+  "creator": "Creator / YouTuber Name",
+  "category": "AI",
+  "price": "₹499",
+  "oldPrice": "₹2,999",
+  "badge": "Trending",
+  "image": "assets/your-course-image.jpg",
+  "description": "Write the course description here.",
+  "tags": [
+    "AI",
+    "productivity",
+    "creator name"
+  ],
+  "featured": true,
+  "trending": false,
+  "recentlyAdded": true,
+  "telegramUsername": "",
+  "telegramMessage": ""
+}

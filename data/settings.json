@@ -1,0 +1,17 @@
+{
+  "brandName": "SkillVault",
+  "telegramUsername": "YOUR_TELEGRAM_USERNAME",
+  "defaultTelegramMessage": "Hi, I want to know more about SkillVault courses.",
+  "currency": "₹",
+  "homepage": {
+    "popularSearches": [
+      "AI",
+      "Video Editing",
+      "Spoken English",
+      "Digital Marketing",
+      "Freelancing"
+    ],
+    "maxHomepageCourses": 12
+  },
+  "siteUrl": "https://YOUR-SITE.pages.dev"
+}
